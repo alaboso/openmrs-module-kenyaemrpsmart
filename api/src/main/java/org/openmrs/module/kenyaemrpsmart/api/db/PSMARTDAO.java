@@ -13,14 +13,19 @@
  */
 package org.openmrs.module.kenyaemrpsmart.api.db;
 
-import org.openmrs.module.kenyaemrpsmart.api.EndPointService;
+import org.openmrs.module.kenyaemrpsmart.PsmartStore;
+import org.openmrs.module.kenyaemrpsmart.api.PSMARTService;
+
+import java.util.List;
 
 /**
- *  Database methods for {@link EndPointService}.
+ *  Database methods for {@link PSMARTService}.
  */
-public interface EndPointDAO {
-	
-	/*
-	 * Add DAO methods here
-	 */
+public interface PSMARTDAO {
+
+    long create(PsmartStore psmartStore);
+
+    List<PsmartStore> list();
+
+    PsmartStore get(long id);
 }

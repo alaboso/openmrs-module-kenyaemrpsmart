@@ -19,13 +19,13 @@ import org.openmrs.api.context.Context;
 import org.openmrs.test.BaseModuleContextSensitiveTest;
 
 /**
- * Tests {@link {EndPointService}}.
+ * Tests {@link {PSMARTService}}.
  */
-public class  EndPointServiceTest extends BaseModuleContextSensitiveTest {
+public class  PSMARTServiceTest extends BaseModuleContextSensitiveTest {
 	
 	@Test
 	public void shouldSetupContext() {
 
-		assertNotNull(Context.getService(EndPointService.class));
+		assertNotNull(Context.getService(PSMARTService.class));
 	}
 }
